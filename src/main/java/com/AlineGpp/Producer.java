@@ -49,7 +49,6 @@ public class Producer implements Runnable {
      */
 
     public Integer generateRandomNumber() {
-
         return (int) (Math.random() * 12 + 1);
     }
 }

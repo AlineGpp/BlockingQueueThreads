@@ -2,6 +2,11 @@ package com.AlineGpp;
 
 import java.util.concurrent.ArrayBlockingQueue;
 
+/**
+ * This is the main class that triggers two threads, one producing and the other consuming, in sync.
+ * @author AlineGpp
+ */
+
 public class Main {
     public static void main(String[] args) {
         int capacity = 10;

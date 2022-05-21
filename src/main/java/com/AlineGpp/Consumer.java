@@ -44,15 +44,21 @@ public class Consumer implements Runnable {
         }
     }
 
-    private void convertNumberInSeasonsAndPrint() {
+    public String convertNumberInSeasonsAndPrint() {
         if (getNumberConsumed() >= 6 && getNumberConsumed() <=9) {
             System.out.println("Inverno");
+            return  "Inverno";
         } else if (getNumberConsumed() >= 10 && getNumberConsumed() <=12) {
             System.out.println("Primavera");
+            return  "Primavera";
         } else if (getNumberConsumed() >= 1 && getNumberConsumed() <=3) {
-            System.out.println("Verao");
-        } else if (getNumberConsumed() >= 4 || getNumberConsumed() <=5) {
+            System.out.println("Verão");
+            return  "Verão";
+        } else if (getNumberConsumed() >= 4 && getNumberConsumed() <=5) {
             System.out.println("Outono");
+            return  "Outono";
+        }else {
+            return "Invalid number";
         }
     }
 
