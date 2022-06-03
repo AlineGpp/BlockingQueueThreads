@@ -18,15 +18,16 @@ class ProducerTest {
     private final Producer PRODUCER = new Producer(QUEUE);
 
     @Test
+    void shouldGeneratePositiveNumbers() {
+        int numberProduced = PRODUCER.generateRandomNumber();
+        assertTrue(numberProduced > 0);
+    }
+
+    @Test
     void shouldGenerateRandomNumberBetweenOneAndTwelve() {
         int numberProduced = PRODUCER.generateRandomNumber();
         assertTrue(numberProduced >= 1 && numberProduced <= 12);
     }
 
-    @Test
-    void shouldGeneratePositiveNumbers() {
-        int numberProduced = PRODUCER.generateRandomNumber();
-        assertTrue(numberProduced > 0);
-    }
 
 }
